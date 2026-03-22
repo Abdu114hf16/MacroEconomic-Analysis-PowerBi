@@ -13,7 +13,7 @@ To simulate a real-world enterprise environment, data was extracted and consolid
 
 ### Phase 2: Data Modeling & Transformation
 * Processed raw data using Power Query to clean, format, and standardize column structures.
-* Architected a **Star Schema** relational model, connecting multiple fact tables (Industry Jobs, Industry Earnings) to a centralized, custom-built Date dimension table to ensure accurate time-intelligence filtering.
+* Architected a Star Schema relational model, connecting multiple fact tables (Industry Jobs, Industry Earnings) to a centralized, custom-built Date dimension table to ensure accurate time-intelligence filtering.
 
 ### Phase 3: DAX & Business Logic
 Engineered dynamic DAX measures to translate raw data into business logic, utilizing functions such as `CALCULATE`, `FILTER`, `AVERAGE`, `MAX`, and `IF`. 
