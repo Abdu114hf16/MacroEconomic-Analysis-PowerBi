@@ -1,18 +1,18 @@
-# US Macroeconomic Analysis: Income vs. Inflation
+# Macroeconomic Analysis: Income vs. Inflation
 
 ## 📌 Project Overview
-This Business Intelligence project is an end-to-end data analysis pipeline designed to uncover the historical relationship between US inflation rates and industry-specific job growth and earnings. The objective is to identify which economic sectors demonstrate the highest resilience during periods of severe macroeconomic stress.
+This Business Intelligence project is an end-to-end data analysis pipeline designed to uncover the historical relationship between US inflation rates and industry-specific job growth and earnings. The objective is to identify which economic sectors demonstrate the highest resilience during periods of severe macroeconomic stress in US.
 
 ## 🏗️ End-to-End Analysis Pipeline
 
-### Phase 1: Data Ingestion & Integration
+### Phase 1: Data Integration & Ingestion
 To simulate a real-world enterprise environment, data was extracted and consolidated from three disparate sources:
 1. **Local Datasets:** Foundational census and industry data files.
 2. **Cloud Storage:** Remote datasets ingested directly from a Microsoft Azure Blob Storage container.
-3. **Web Extraction:** Historical Consumer Price Index (CPI) and inflation data extracted from the [Federal Reserve Economic Data (FRED) database](https://fred.stlouisfed.org/).
+3. **Web Extraction:** Additional required data about Consumer Price Index (CPI) and inflation data extracted from the [Federal Reserve Economic Data (FRED) database](https://fred.stlouisfed.org/).
 
-### Phase 2: Data Modeling & Transformation
-* Processed raw data using Power Query to clean, format, and standardize column structures.
+### Phase 2: Data Cleaning & Transformation and Modeling
+* Processed raw data using different techniques through Power Query to clean and format, and standardize column structures.
 * Architected a Star Schema relational model, connecting multiple fact tables (Industry Jobs, Industry Earnings) to a centralized, custom-built Date dimension table to ensure accurate time-intelligence filtering.
 
 ### Phase 3: DAX & Business Logic
