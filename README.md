@@ -38,5 +38,47 @@ This project was developed as part of the rigorous curriculum provided by **Udac
 
 ## 👨‍💻 Author
 **Abdullah Alshammari**
-* Portfolio: [alshammarii.me](https://alshammarii.me)
+* Portfolio: [alshammari.dev](https://alshammari.dev)
 * LinkedIn: [Abdullah Alshammari](https://www.linkedin.com/in/abdullah-alshammari-0983843a8/)
+
+## Data sources and coverage
+
+The two halves of this model have **different coverage**, and keeping them
+apart is the single most important thing when reading any figure from it.
+
+| Data | Coverage | Source |
+| --- | --- | --- |
+| Inflation, consumer prices for the United States | **Annual, 1960 to 2024** | FRED series [`FPCPITOTLZGUSA`](https://fred.stlouisfed.org/series/FPCPITOTLZGUSA), annual percentage, not seasonally adjusted. Original source: World Bank, retrieved through FRED. |
+| Industry earnings | **Four snapshot years: 1990, 2000, 2010, 2020** | `Datasets/Industry Earnings.xlsx` |
+| Jobs by industry | Annual series | `Datasets/` |
+| Supporting series | Various | US Bureau of Labor Statistics extracts, `Datasets/Historical Population.xlsx` |
+
+Any statement placing a sector next to an inflation rate is anchored to one of
+the four earnings snapshot years. There is no annual industry **earnings**
+series behind it, and four points must not be read as a line drawn through
+sixty-five.
+
+## Limitations
+
+- **Descriptive, not causal.** Two series moving together is not evidence that
+  one drove the other.
+- Nominal and inflation-adjusted values are different things. Any comparison
+  across periods should state which it is using.
+- Sector averages are sensitive to workforce composition, which changes over
+  the period. A shift in who is employed moves an average with nobody
+  receiving a raise.
+- **United States only.** The inflation series is a national aggregate and says
+  nothing about how prices moved for any particular household.
+- FRED revises its series. Figures here reflect the vintage at the time the
+  model was built.
+
+## Case study
+
+A full write-up: the business question, the method, the evidence, and what the
+result does not support.
+
+<https://alshammari.dev/projects/income-inflation-purchasing-power/>
+
+## License
+
+MIT. See [LICENSE](LICENSE).
